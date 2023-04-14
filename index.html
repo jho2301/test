@@ -10,12 +10,13 @@
 
 <body>
   <iframe style="width: 60vw; height: 60vh;"
+          
     src=""></iframe>
 </body>
   
   <script>
   const $iframe = document.querySelector('iframe');
-    
+     sandbox="allow-scripts allow-presentation allow-same-origin allow-forms allow-modals allow-popups allow-top-navigation allow-top-navigation-to-custom-protocols"
     $iframe.src = `https://alpha.toss.im/payfront/auth${window.location.search}`
   </script>
 
