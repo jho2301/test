@@ -1,22 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-
-<body>
-  <iframe style="width: 60vw; height: 60vh;"
-          sandbox="allow-scripts allow-same-origin allow-forms allow-modals allow-top-navigation allow-popups allow-top-navigation-to-custom-protocols"
-          src=""></iframe>
-</body>
-  
-  <script>
-  const $iframe = document.querySelector('iframe');
-    $iframe.src = `https://alpha.toss.im/payfront/auth${window.location.search}`
-  </script>
-
+  <body>
+    <div id="app"></div>
+    <h2>cross-origin iframe</h2>
+    <div class="iframe-container">
+      <iframe
+        class="iframe-layout"
+        sandbox="allow-scripts allow-same-origin allow-forms allow-modals allow-top-navigation allow-popups allow-top-navigation"
+        src="https://qxdnbq.csb.app/"
+      ></iframe>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
 </html>
